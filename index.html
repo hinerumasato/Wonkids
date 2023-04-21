@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .post_container {
+            width: 1200px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .post_container img {
+            width: 100%;
+        }
+
+        .post_container ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            list-style: none;
+            row-gap: 60px;
+        }
+
+        .post_container ul li {
+            width: calc(45% - 20px);
+            border: solid 1px #ccc;
+            padding: 16px;
+            margin-top: 16px;
+
+        }
+
+        .post_container .item_title {
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            font-size: 26px;
+            margin-bottom: 4px;
+        }
+
+        .post_container .text_content {
+            min-height: 40px;
+        }
+
+        .post_container .animal_voice {
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .post_container .animal_voice > p {
+            margin-right: 6px;
+        }
+
+        .text_content_story > i {
+            margin: 0 auto;
+            display: block;
+            width: fit-content;
+            font-size: 20px;
+            position: relative;
+            top: 8px;
+        }
+
+        @media only screen and  (max-width: 740px) {
+            .post_container ul {
+                display: block;
+            }
+
+            .post_container ul li {
+                margin: 0 auto;
+                width: 80%;
+            }
+        }
+
+    </style>
+
+    <div class="post_container">
+        <div class="wrap">
+            <div class="area">
+                <div class="sub_title1">&nbsp;</div>
+
+                <div class="sub_title1"><img alt="1  TQ.jpg" data-file-srl="6202" editor_component="image_link"
+                        src="http://wonkidsclub.net/./files/attach/images/152/461/f76548d2de22e88f12f27f7e7e00f28d.jpg" />
+                    <p>&nbsp;</p>
+                </div>
+
+                <div class="sub_title1"><img alt="1 CT.jpg" data-file-srl="6203" editor_component="image_link"
+                        src="http://wonkidsclub.net/./files/attach/images/152/461/73a96e29e42d4cb1070a8bac8410a199.jpg" />
+                    <p>&nbsp;</p>
+                    &nbsp;
+
+                    <p>&nbsp;</p>
+                </div>
+
+                <ul>
+                    <li>
+                        <div class="item_title">
+                            Bài hát Wonkids
+                        </div>
+                        <div class="content">
+                            <div class="text_content">
+                                <p>Bài hát: Xưa kia khi chưa có.pptx</p>
+                                <p>Sheet nhạc: Xưa kia khi chưa có.pdf</p>
+                            </div>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/NngZurrOvUo"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_title">Câu chuyện Wonkids</div>
+                        <div class="text_content text_content_story">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/RP0BEJ1oPPE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <div class="item_title">Câu gốc Wonkids</div>
+                        <div class="text_content">
+                            <p>Sáng Thế Ký 1:1.pptx (Học theo cử điệu)</p>
+                        </div>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/5D0W825oFpw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <div class="item_title">Hoạt động Wonkids</div>
+                        <div class="text_content">
+                            <p>Hướng dẫn giáo viên:</p>
+                            <iframe src="./Cảm tạ chúa đã dựng nên thế giới này.pdf" allowfullscreen width="100%" height="315px" frameborder="0"></iframe>
+                            <p>Hình ảnh hoạt động: <span style="color: blue;">| Ngày 1 và 2 | ngày 3 và 4 | ngày 5 và 6 |</span></p>
+                            
+                            <div class="animal_voice">
+                                <p>Tiếng động vật:</p>
+                                <audio controls>
+                                    <source src="./Lòng nguyện theo Giê-xu - beat.mp3" type="">
+                                </audio>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
