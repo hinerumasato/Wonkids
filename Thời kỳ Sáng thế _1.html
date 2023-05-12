@@ -12,9 +12,13 @@
 <body>
 
     <style>
-        * {
-            font-family: 'Times New Roman', Times, serif;
-            margin: 0;
+        .post_container {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        p {
+            margin: 4px;
             padding: 0;
         }
 
@@ -28,7 +32,7 @@
             width: 100%;
         }
 
-        .post_container ul {
+        .post_container .card-list {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -36,7 +40,7 @@
             row-gap: 60px;
         }
 
-        .post_container ul li {
+        .post_container .card-list > li {
             width: calc(45% - 20px);
             border: solid 1px #ccc;
             padding: 16px;
@@ -49,24 +53,20 @@
             text-align: center;
             font-weight: bold;
             font-size: 26px;
-            margin-bottom: 4px;
+            margin-bottom: 12px;
         }
 
         .post_container .text_content {
-            min-height: 40px;
+            min-height: 45px;
         }
 
         .post_container .animal_voice {
-            margin-top: 8px;
+            
             display: flex;
             align-items: center;
         }
 
-        .post_container .animal_voice > p {
-            margin-right: 6px;
-        }
-
-        .text_content_story > i {
+        .text_content_story>i {
             margin: 0 auto;
             display: block;
             width: fit-content;
@@ -75,17 +75,24 @@
             top: 8px;
         }
 
-        @media only screen and  (max-width: 740px) {
-            .post_container ul {
+        .date_images {
+            margin: 0;
+        }
+
+        @media only screen and (max-width: 740px) {
+            .post_container .card-list {
                 display: block;
             }
 
-            .post_container ul li {
+            .post_container .card-list > li {
                 margin: 0 auto;
                 width: 80%;
             }
-        }
 
+            iframe {
+                height: 315px;
+            }
+        }
     </style>
 
     <div class="post_container">
@@ -106,7 +113,7 @@
                     <p>&nbsp;</p>
                 </div>
 
-                <ul>
+                <ul class="card-list">
                     <li>
                         <div class="item_title">
                             Bài hát Wonkids
@@ -125,7 +132,7 @@
                     <li>
                         <div class="item_title">Câu chuyện Wonkids</div>
                         <div class="text_content text_content_story">
-                            <i class="fa-solid fa-book"></i>
+
                         </div>
                         <iframe width="100%" height="315" src="https://www.youtube.com/embed/RP0BEJ1oPPE"
                             title="YouTube video player" frameborder="0"
@@ -137,7 +144,7 @@
                         <div class="text_content">
                             <p>Sáng Thế Ký 1:1.pptx (Học theo cử điệu)</p>
                         </div>
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/5D0W825oFpw"
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/5D0W825oFpw"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
@@ -146,16 +153,43 @@
                         <div class="item_title">Hoạt động Wonkids</div>
                         <div class="text_content">
                             <p>Hướng dẫn giáo viên:</p>
-                            <iframe src="./Cảm tạ chúa đã dựng nên thế giới này.pdf" allowfullscreen width="100%" height="315px" frameborder="0"></iframe>
-                            <p>Hình ảnh hoạt động: <span style="color: blue;">| Ngày 1 và 2 | ngày 3 và 4 | ngày 5 và 6 |</span></p>
-                            
-                            <div class="animal_voice">
-                                <p>Tiếng động vật:</p>
-                                <audio controls>
-                                    <source src="./Lòng nguyện theo Giê-xu - beat.mp3" type="">
-                                </audio>
-                            </div>
                         </div>
+                        <iframe width="100%"
+                            src="https://drive.google.com/file/d/19c2m2OpvGGkt2bHHVkPyyz_m7OtxVQqu/preview" width="640"
+                            height="315px" allow="autoplay"></iframe>
+                        <ul>
+                            <li>
+                                <p class="date_images">
+                                    Hình ảnh: 
+                                    <a href="https://drive.google.com/file/d/1Ys-MC0mSiMNnKxYs-YbyqHhYDKeVaDuI/view?usp=share_link">| Ngày 1 và 2 |</a>
+                                    <a href="https://drive.google.com/file/d/12flwQNOpAaD0L8ZgtLBEohiWFxJBqq8i/view?usp=share_link">| Ngày 3 và 4 |</a>
+                                    <a href="https://drive.google.com/file/d/10EKgvNC67SQVOs_RsLKzHohWj2HhxbmP/view?usp=share_link">| Ngày 5 và 6 |</a>
+                                </p>
+                            </li>
+
+                            <li>
+                                <div class="link_video">
+                                    <a href="https://drive.google.com/file/d/1XX5WeN8VOjzN02VGwfJja8Exq0jHw7gH/view?usp=share_link">
+                                        Video Ngày Thứ 5
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="animal_voice">
+                                    <a href="https://drive.google.com/file/d/19yA3pR2NQo7sYb2V-xmSSDk_06AGRjho/view?usp=share_link">
+                                        Audio Tiếng động vật:
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="online_activities">
+                                    Hoạt động online: <a href="https://docs.google.com/presentation/d/105qooktwoEwvpxpQwiF3FR8dJmWBUS3k/edit?usp=share_link&ouid=110890324321381362428&rtpof=true&sd=true">Đây là ngày sáng tạo thứ mấy?</a>
+                                </div>
+                            </li>
+                        </ul>
+
                     </li>
                 </ul>
 

@@ -14,3 +14,9 @@
     font-family:"Times New Roman";
     font-size:14px; 
 }
+
+.wonkids-menu-item > a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px !important;
+    font-weight: bold;    
+}
